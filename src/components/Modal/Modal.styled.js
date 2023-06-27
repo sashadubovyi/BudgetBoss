@@ -3,14 +3,14 @@ import Modal from 'react-modal';
 
 export const ExitModal = styled(Modal)`
   top: 40%;
-  left: 0%;
+  /* left: 0%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 32px;
   position: absolute;
-  width: 380px;
+  width: 100%;
   height: 175px;
   background: #383847;
   box-shadow: inset 0px 2px 14px rgba(132, 132, 132, 0.2);
@@ -31,6 +31,7 @@ export const ExitModal = styled(Modal)`
   @media (min-width: 768px) {
     top: 40%;
     left: 25%;
+    width: 380px;
   }
 
   @media (min-width: 1280px) {
